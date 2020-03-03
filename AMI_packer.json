@@ -13,7 +13,11 @@
   "provisioners": [
   {
 	"type": "shell",
-	"script": "test.sh"
-  }
+	"inline": [
+      	  "sudo yum install httpd -y",
+          "sudo service httpd start",
+          "sudo chkconfig httpd on"
+	]
+    }
   ]
 }
