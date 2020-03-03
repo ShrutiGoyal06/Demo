@@ -2,7 +2,7 @@
 
   "builders": [{
     "type": "amazon-ebs",
-    "shared_credentials_file": "/root/.aws/credentials"
+    "shared_credentials_file": "/root/.aws/credentials",
     "profile": "default",
     "region": "us-east-1",
     "source_ami": "ami-0e2ff28bfb72a4e45",
