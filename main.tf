@@ -2,7 +2,7 @@ provider "aws" {
  
   region   = "us-east-1"
   version = "~> 2.50"
-  shared_credentials_file = "/.aws/credentials"
+  shared_credentials_file = "/root/.aws/credentials"
   profile = "default"
   
 }
