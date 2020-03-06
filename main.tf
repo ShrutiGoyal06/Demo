@@ -1,15 +1,13 @@
 provider "aws" {
  
- version = "~> 2.50"
- region   = "us-east-1"
- shared_credentials_file = ".aws/credentials"
- profile = "default"
- 
- 
- 
+  region   = "us-east-1"
+  version = "~> 2.50"
+  shared_credentials_file = "/.aws/credentials"
+  profile = "default"
+  
 }
  
-resource "aws_instance" "demo" {
+resource "aws_instance" "instance" {
  
   ami         = "ami-02ab9f1c34f810a84"
   instance_type = "t2.micro"
