@@ -9,7 +9,7 @@ provider "aws" {
  
 resource "aws_instance" "instance" {
  
-  ami         = "ami-0cfa0e38bdafeddf4"
+  ami         = "ami-0b30376e56906bf37"
   instance_type = "t2.micro"
   key_name = "MyKP"
   security_groups = ["My SG"]
